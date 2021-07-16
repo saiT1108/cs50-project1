@@ -8,6 +8,8 @@ def index(request):
         "entries": util.list_entries()
     })
 
+#testing git control
+
 def getEnry(request, name):
     return render(request, f"encyclopedia/{name}.html"), {
         "entries": util.get_entry(f"{name}.md")
